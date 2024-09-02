@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 语雀-Hexo
-subtitle: '语雀 + Elog + Hexo + GitHub Actions + Vercel 博客解决方案'
-description: '语雀 + Elog + Hexo + GitHub Actions + Vercel 博客解决方案'
+title: Fenris' Blog
+subtitle: '学习笔记博客'
+description: '作者'
 keywords:
-author: 1874
+author: zhoujiayingvana
 language: zh-CN
 timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://yuque-hexo.vercel.app
+url: https://zhoujiayingvana.github.io/
 permalink: :title/
 permalink_defaults:
 pretty_urls:

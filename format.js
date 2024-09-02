@@ -19,9 +19,24 @@ const format = (doc) => {
       return `{% note ${type} %}\n${content}\n{% endnote %}`;
     });
   }
+  const categories = makeDictory(doc);
+  if (categories) {
+    doc.properties["categories"] = categories;
+  }
   return matterMarkdownAdapter(doc);
 };
 
+const makeDictory = (doc) => {
+  let dicts = null
+  if (doc.catalog && doc.catalog.length > 0) {
+    dicts = doc.catalog.map(item => item.title);
+  }
+  else if (doc.properties.title) {
+    // 目录是自己
+    dicts = [doc.properties.title];
+  }
+  return dicts;
+}
 module.exports = {
   format,
 };
